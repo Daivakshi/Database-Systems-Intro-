@@ -1,0 +1,5 @@
+((select A.cid from yrb_member A where A.club = 'Basic')
+except (select B.cid from yrb_member B where B.club = 'Oprah'))
+union
+((select B.cid from yrb_member B where B.club = 'Oprah')
+except (select A.cid from yrb_member A where A.club = 'Basic'));

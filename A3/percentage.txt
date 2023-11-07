@@ -1,0 +1,3 @@
+select avg(weight) as percentage
+from yrb_book
+where year = 1999;

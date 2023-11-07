@@ -1,0 +1,4 @@
+select avg(weight) as averageWeight
+from yrb_book
+where weight < (select max(weight) from yrb_book)
+    and weight > (select min(weight) from yrb_book);

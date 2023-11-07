@@ -1,0 +1,4 @@
+select C.name + "is a member of" + M.club as Membership
+from yrb_customer C, yrb_member M
+where C.cid = M.cid
+order by name;

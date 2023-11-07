@@ -1,0 +1,6 @@
+select --cat, sum(weight)
+cat = isnull(cat, 'Total'),
+weight = sum(weight)
+from yrb_book 
+group by rollup(cat)
+order by cat, weight;

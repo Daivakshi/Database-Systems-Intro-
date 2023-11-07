@@ -1,0 +1,7 @@
+   cat    | weight 
+----------+--------
+ children |   1206
+ ⋮
+ Total    |  36480
+(13 rows)
+
